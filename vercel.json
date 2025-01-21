@@ -1,40 +1,8 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "next.config.js",
-        "use": "@vercel/next"
-      }
-    ],
     "rewrites": [
       {
-        "source": "/api/:path*",
-        "destination": "/api/:path*"
+        "source": "/(.*)",
+        "destination": "/index.html"
       }
-    ],
-    "redirects": [
-      {
-        "source": "/old-path",
-        "destination": "/new-path",
-        "permanent": true
-      }
-    ],
-    "headers": [
-      {
-        "source": "/api/:path*",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          },
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=3600"
-          }
-        ]
-      }
-    ],
-    "cleanUrls": true,
-    "trailingSlash": false
+    ]
   }
-  
