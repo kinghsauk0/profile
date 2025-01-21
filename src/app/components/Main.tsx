@@ -14,12 +14,9 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Dialog } from "primereact/dialog";
 import Autoplay from "embla-carousel-autoplay";
-import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
 
 function Main() {
@@ -85,7 +82,7 @@ function Main() {
           <div className="w-full md:w-[50%] flex flex-col justify-center items-center text-center md:text-left">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold text-pink-700 mb-4">
-                I'm{" "}
+              I&apos;m{" "}
                 <motion.span
                   animate={{}}
                   className="text-4xl md:text-6xl font-bold text-white"
@@ -310,7 +307,7 @@ function Main() {
           </h3>
           <div className="h-2 w-full bg-purple-950/50 my-4" />
           <p className=" text-lg text-white">
-            These are the technologies I've worked with
+            These are the technologies I&apos;ve worked with
           </p>
           <div className="w-full flex flex-row flex-wrap justify-between gap-8 mt-10">
             {tach.map((ele, i) => (
@@ -395,7 +392,7 @@ function Main() {
               onClick={handleSendMessage}
               className=" text-white   rounded-md bg-[#00FF00] px-4 py-2"
             >
-              Let's talk
+              Let&apos;s talk
             </motion.button>
             <Toast ref={toast} position="bottom-center" />
           </div>
